@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CrazySim — Christian Llanes</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/project-page.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">Christian Llanes</a>
+      <a href="../index.html#projects" class="btn btn-outline btn-sm">Back to Projects</a>
+    </div>
+  </nav>
+
+  <section class="project-page">
+    <div class="container">
+      <h1 class="project-page-title">CrazySim</h1>
+      <div class="project-tags" style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+        <span class="tag">C</span>
+        <span class="tag">Python</span>
+        <span class="tag">ROS2</span>
+        <span class="tag">Gazebo</span>
+        <span class="tag">MuJoCo</span>
+        <span class="tag">Crazyflie</span>
+        <span class="tag">Model Predictive Control</span>
+        <a href="https://github.com/gtfactslab/CrazySim" class="btn btn-primary" style="margin-left: auto;" target="_blank">GitHub</a>
+        <a href="../assets/papers/llanes2024crazysim.pdf" class="btn btn-outline" target="_blank">PDF</a>
+      </div>
+
+      <div class="project-page-description">
+        <p>CrazySim is a software-in-the-loop simulation framework for the Bitcraze Crazyflie nano quadrotor platform. The framework runs the actual Crazyflie firmware in the simulation loop with Gazebo and MuJoCo physics backends, enabling direct transfer of control algorithms from simulation to real hardware with minimal modification. It supports both single and multi-robot scenarios with swarms up to 32 Crazyflies, and integrates with CFLib and CrazySwarm2 for a ROS 2 interface. As part of the ICRA 2024 paper, a model predictive controller was tested and validated in CrazySim before deploying to hardware.</p>
+        <p>Recent additions to the MuJoCo backend include simulated Multi-ranger ToF distance sensors for obstacle avoidance, AI-deck camera streaming using the CPX protocol for FPV and vision-based autonomy, realistic BMI088 IMU sensor noise with per-drone randomized bias and scale factors, ground effect modeling for near-surface flight, inter-drone downwash aerodynamics, and configurable wind fields with Dryden turbulence.</p>
+        <p>The project has gained traction in the community with <span id="star-count">131</span> stars and <span id="fork-count">24</span> forks on GitHub, and has been adopted as a teaching tool in university courses at the University of Illinois and the University of Zagreb in Croatia.</p>
+      </div>
+
+      <div class="project-page-gallery" style="display: grid; grid-template-columns: 1fr 1fr; align-items: center;">
+        <img src="../assets/projects/crazysim-drone.png" alt="CrazySim Crazyflie quadcopter render">
+        <video controls autoplay muted loop preload="metadata" id="led-video">
+          <source src="../assets/projects/crazysim-circling-leds.mp4" type="video/mp4">
+        </video>
+        <img src="../assets/projects/crazysim-aideck.png" alt="CrazySim AI-deck FPV camera simulation with MuJoCo obstacle scene">
+        <img src="../assets/projects/crazysim-multiranger.gif" alt="CrazySim MPC trajectory tracking">
+        <img src="../assets/projects/crazysim-analytics.png" alt="CrazySim GitHub traffic analytics" style="grid-column: 1 / -1;">
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Christian Llanes. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('led-video').currentTime = 3;
+
+    fetch('https://api.github.com/repos/gtfactslab/CrazySim')
+      .then(r => r.json())
+      .then(data => {
+        document.getElementById('star-count').textContent = data.stargazers_count;
+        document.getElementById('fork-count').textContent = data.forks_count;
+      })
+      .catch(() => {});
+  </script>
+
+</body>
+</html>

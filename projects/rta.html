@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UAV Run-Time Assurance — Christian Llanes</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/project-page.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">Christian Llanes</a>
+      <a href="../index.html#projects" class="btn btn-outline btn-sm">Back to Projects</a>
+    </div>
+  </nav>
+
+  <section class="project-page">
+    <div class="container">
+      <h1 class="project-page-title">UAV Run-Time Assurance</h1>
+      <div class="project-tags" style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+        <span class="tag">C++</span>
+        <span class="tag">ROS2</span>
+        <span class="tag">PX4</span>
+        <span class="tag">Control Barrier Functions</span>
+        <a href="../assets/papers/llanes2022iccps.pdf" class="btn btn-outline" style="margin-left: auto;" target="_blank">PDF 1</a>
+        <a href="../assets/papers/llanes2023scitech.pdf" class="btn btn-outline" target="_blank">PDF 2</a>
+      </div>
+
+      <div class="project-section">
+        <h2 class="project-section-title">Collision Avoidance with In-the-Loop Reachability</h2>
+        <p class="project-page-description">Implemented a run-time assurance controller that supervises unverified controllers on UAVs to guarantee safety. The RTA uses control barrier functions with fast, in-the-loop reachability analysis based on mixed monotone systems theory to minimally filter unsafe control inputs at each timestep, ensuring collision avoidance while giving the primary controller maximum freedom. The reachability computation runs in under five milliseconds for an eight-dimensional system, enabling real-time operation at 100 Hz on a Jetson TX2. Collision avoidance between two quadrotors was demonstrated in hardware, where an unsafe controller would have caused a collision but the RTA successfully intervened.</p>
+        <div class="project-page-gallery">
+          <img src="../assets/projects/rta-figure2.png" alt="Run-time assurance approach diagram">
+          <img src="../assets/projects/rta-quads-flying.png" alt="Two quadrotors flying with desired position marker">
+          <img src="../assets/projects/rta-p0-img0.png" alt="Run-time assurance concept with reachable sets and two UAVs">
+          <img src="../assets/projects/rta-p7-img0.png" alt="Custom quadrotor hardware platform with motion capture markers">
+          <video controls preload="metadata">
+            <source src="../assets/projects/rta-demo-1.mp4" type="video/mp4">
+          </video>
+          <video controls muted preload="metadata">
+            <source src="../assets/projects/rta-demo-2.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Christian Llanes. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

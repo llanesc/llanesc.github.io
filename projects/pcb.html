@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Designing Printed Circuit Boards for Drones — Christian Llanes</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/project-page.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">Christian Llanes</a>
+      <a href="../index.html#projects" class="btn btn-outline btn-sm">Back to Projects</a>
+    </div>
+  </nav>
+
+  <section class="project-page">
+    <div class="container">
+      <h1 class="project-page-title">Designing Printed Circuit Boards for Drones</h1>
+      <div class="project-tags">
+        <span class="tag">Altium Designer</span>
+        <span class="tag">EAGLE</span>
+        <span class="tag">Circuit Design</span>
+        <span class="tag">STM32</span>
+      </div>
+
+      <div class="project-section">
+        <h2 class="project-section-title">Custom Flight Controller</h2>
+        <p class="project-page-description">A custom flight controller PCB designed from scratch featuring an STM32 ARM microcontroller with interfaces for gyroscope, GPS, PWM motor outputs, USB, and various sensor buses (I2C, SPI). PX4 autopilot was ported to the board. This was an introduction to circuit design and working with the STM32 hardware abstraction layer (HAL).</p>
+        <div class="project-page-gallery">
+          <img src="../assets/projects/pcb-skyest-assembled.jpg" alt="Assembled custom flight controller PCB with STM32 MCU">
+          <img src="../assets/projects/pcb-fc-1.jpg" alt="Custom flight controller PCB">
+          <img src="../assets/projects/pcb-fc-2.jpg" alt="Custom flight controller PCB">
+          <img src="../assets/projects/pcb-fc-eagle.png" alt="Flight controller PCB layout in EAGLE">
+        </div>
+      </div>
+
+      <div class="project-section">
+        <h2 class="project-section-title">Wheatstone Bridge Strain Gauge Board</h2>
+        <p class="project-page-description">A custom Wheatstone bridge PCB designed to add strain gauges to each arm of a quadrotor drone. This allowed isolating motor thrust from other external forces measured by the IMU, enabling in flight motor failure isolation and thrust estimation.</p>
+        <div class="project-page-gallery">
+          <img src="../assets/projects/pcb-thumbnail.jpg" alt="Custom Wheatstone bridge PCB wired to carbon fiber drone frame">
+          <img src="../assets/projects/pcb-assembled-hand.jpg" alt="Assembled Wheatstone bridge board in hand">
+          <img src="../assets/projects/pcb-sg-schematic.png" alt="Strain gauge Wheatstone bridge schematic">
+          <img src="../assets/projects/pcb-sg-layout.png" alt="Strain gauge PCB layout">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Christian Llanes. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

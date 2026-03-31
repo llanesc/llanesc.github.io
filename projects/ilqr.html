@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iLQR Quadrotor Trajectory Tracking — Christian Llanes</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/project-page.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">Christian Llanes</a>
+      <a href="../index.html#projects" class="btn btn-outline btn-sm">Back to Projects</a>
+    </div>
+  </nav>
+
+  <section class="project-page">
+    <div class="container">
+      <h1 class="project-page-title">iLQR Quadrotor Trajectory Tracking</h1>
+      <div class="project-tags" style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+        <span class="tag">C++</span>
+        <span class="tag">ROS2</span>
+        <span class="tag">PX4</span>
+        <span class="tag">Optimal Control</span>
+        <a href="https://github.com/llanesc/lqr-tracking" class="btn btn-primary" style="margin-left: auto;" target="_blank">GitHub</a>
+      </div>
+
+      <div class="project-page-description">
+        <p>An implementation of the onboard state dependent LQR algorithm from Foehn and Scaramuzza (ICRA 2018) for agile quadrotor trajectory tracking. The goal was to verify the algorithm and extend it to support both Euler angle and quaternion representations for attitude.</p>
+        <p>The controller linearizes the nonlinear quadrotor dynamics along a reference trajectory at runtime and computes full state feedback gains using LQR. Implemented in C++ as a ROS node using MAVROS to interface with the PX4 autopilot. Tested on real hardware tracking minimum snap trajectories with motion capture localization.</p>
+      </div>
+
+      <div class="project-page-gallery" style="column-count: unset; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px;">
+        <iframe src="https://www.youtube.com/embed/Arlwatxqgfo" frameborder="0" allowfullscreen style="width:100%; aspect-ratio:16/9; border-radius:10px; border:1px solid var(--color-border);"></iframe>
+        <iframe src="https://www.youtube.com/embed/phKAAQSkkjc" frameborder="0" allowfullscreen style="width:100%; aspect-ratio:16/9; border-radius:10px; border:1px solid var(--color-border);"></iframe>
+        <iframe src="https://www.youtube.com/embed/MLneSW5LoOI" frameborder="0" allowfullscreen style="width:100%; aspect-ratio:16/9; border-radius:10px; border:1px solid var(--color-border);"></iframe>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Christian Llanes. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

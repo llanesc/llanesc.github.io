@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christian Llanes — Portfolio</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">Christian Llanes</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#publications" class="nav-link">Publications</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-mosaic">
+      <!-- Top row -->
+      <img src="assets/projects/p51-finished.jpg" alt="" class="mosaic-img">
+      <img src="assets/projects/crazysim-drone.png" alt="" class="mosaic-img">
+      <img src="assets/projects/kj66-rendered.png" alt="" class="mosaic-img">
+      <img src="assets/projects/rta-quads-flying.png" alt="" class="mosaic-img">
+      <img src="assets/projects/capstone-2.png" alt="" class="mosaic-img">
+      <img src="assets/projects/mecc-p4-img1.png" alt="" class="mosaic-img">
+      <!-- Left side -->
+      <img src="assets/projects/piper-cub-5.jpg" alt="" class="mosaic-img">
+      <img src="assets/projects/rta-p7-img0.png" alt="" class="mosaic-img">
+      <!-- Center content -->
+      <div class="hero-center">
+        <h1 class="hero-name">Christian Llanes</h1>
+        <p class="hero-tagline">Aerospace Engineer &amp; Roboticist — GN&amp;C, Machine Learning, and Aerial Robotics</p>
+        <div class="hero-contacts">
+          <a href="mailto:christianllanes96@gmail.com">&#9993; christianllanes96@gmail.com</a>
+          <a href="https://github.com/llanesc" target="_blank">GitHub</a>
+          <a href="https://scholar.google.com/citations?user=GVzPcjoAAAAJ&hl=en" target="_blank">Google Scholar</a>
+          <a href="https://www.linkedin.com/in/christian-llanes/" target="_blank">LinkedIn</a>
+        </div>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+        </div>
+      </div>
+      <!-- Right side -->
+      <img src="assets/projects/pcb-thumbnail.jpg" alt="" class="mosaic-img">
+      <img src="assets/projects/ilqr-thumbnail.jpg" alt="" class="mosaic-img">
+      <!-- Bottom row -->
+      <img src="assets/projects/p51-balsa-frame.jpg" alt="" class="mosaic-img">
+      <img src="assets/projects/nieuport28-structure.jpg" alt="" class="mosaic-img">
+      <img src="assets/projects/apollo-reentry.png" alt="" class="mosaic-img">
+      <img src="assets/projects/pcb-drone-frame.jpg" alt="" class="mosaic-img">
+      <img src="assets/projects/kj66-cad.png" alt="" class="mosaic-img">
+      <img src="assets/projects/marl-fig1-0.png" alt="" class="mosaic-img">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-image">
+          <img src="assets/profile.png" alt="Christian Llanes">
+        </div>
+        <div class="about-text">
+          <p>
+            Aerospace engineer and aerial roboticist with interest in machine learning and guidance, navigation, and controls for aerospace and robotics applications. I have 7+ years of experience working on custom academic drone platforms with hardware and software development tools for aerial robotics research.
+          </p>
+          <p>
+            Currently a Ph.D. candidate in Robotics at the Georgia Institute of Technology, working in the Formal Methods and Autonomous Control of Transportation Systems (FACTS) Lab. My research spans run-time assurance, reachability, motion planning, optimal control, and reinforcement learning for aerial robotics. I've also interned at Sandia National Laboratories and NASA Glenn Research Center.
+          </p>
+          <div class="about-skills">
+            <h3>Programming</h3>
+            <div class="skill-tags">
+              <span class="tag">C</span>
+              <span class="tag">C++</span>
+              <span class="tag">Python</span>
+              <span class="tag">Bash</span>
+              <span class="tag">MATLAB</span>
+            </div>
+          </div>
+          <div class="about-skills">
+            <h3>Software &amp; Frameworks</h3>
+            <div class="skill-tags">
+              <span class="tag">ROS1</span>
+              <span class="tag">ROS2</span>
+              <span class="tag">PX4</span>
+              <span class="tag">ArduPilot</span>
+              <span class="tag">Simulink</span>
+              <span class="tag">Gazebo</span>
+              <span class="tag">LabVIEW</span>
+              <span class="tag">SolidWorks</span>
+              <span class="tag">LaTeX</span>
+            </div>
+          </div>
+          <div class="about-skills">
+            <h3>Hardware</h3>
+            <div class="skill-tags">
+              <span class="tag">Circuit Design</span>
+              <span class="tag">Microcontrollers</span>
+              <span class="tag">Motion Capture</span>
+              <span class="tag">Additive Manufacturing</span>
+              <span class="tag">Soldering</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2020 — 2026 (Expected)</div>
+            <h3>Ph.D. in Robotics</h3>
+            <p class="timeline-org">Georgia Institute of Technology — GPA: 3.86</p>
+            <p>Concentration: Mechanics, Controls, Artificial Intelligence</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Aug 2015 — Dec 2019</div>
+            <h3>B.S. in Aerospace Engineering</h3>
+            <p class="timeline-org">Embry-Riddle Aeronautical University — GPA: 3.95</p>
+            <p>Graduated summa cum laude and top of Fall 2019 B.S. in Aerospace Engineering class.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <a href="projects/crazysim.html" class="project-card">
+          <div class="project-thumb">
+            <img src="assets/projects/crazysim-drone.png" alt="CrazySim quadcopter render">
+          </div>
+          <div class="project-card-info">
+            <h3>CrazySim</h3>
+            <div class="project-tags">
+              <span class="tag tag-sm">C</span>
+              <span class="tag tag-sm">Python</span>
+              <span class="tag tag-sm">ROS2</span>
+              <span class="tag tag-sm">Gazebo</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="projects/marl.html" class="project-card">
+          <div class="project-thumb">
+            <img src="assets/projects/marl-fig1-0.png" alt="Multi-agent pursuit-evasion long exposure">
+          </div>
+          <div class="project-card-info">
+            <h3>Pursuit-Evasion with Multi-Agent Reinforcement Learning</h3>
+            <div class="project-tags">
+              <span class="tag tag-sm">Python</span>
+              <span class="tag tag-sm">Reinforcement Learning</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="projects/safe-rl.html" class="project-card">
+          <div class="project-thumb">
+            <img src="assets/projects/rta-forest-rl.png" alt="Safe RL navigation through forest environment">
+          </div>
+          <div class="project-card-info">
+            <h3>Safe RL Navigation with Run-Time Assurance</h3>
+            <div class="project-tags">
+              <span class="tag tag-sm">Reinforcement Learning</span>
+              <span class="tag tag-sm">MPC</span>
+              <span class="tag tag-sm">CBF</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="projects/rta.html" class="project-card">
+          <div class="project-thumb">
+            <img src="assets/projects/rta-quads-flying.png" alt="Two quadrotors flying with RTA collision avoidance">
+          </div>
+          <div class="project-card-info">
+            <h3>UAV Run-Time Assurance</h3>
+            <div class="project-tags">
+              <span class="tag tag-sm">C++</span>
+              <span class="tag tag-sm">ROS</span>
+              <span class="tag tag-sm">PX4</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="projects/qlearning.html" class="project-card">
+          <div class="project-thumb">
+            <img src="assets/projects/mecc-p4-img1.png" alt="Hardware experiment with Q-Learning Controller">
+          </div>
+          <div class="project-card-info">
+            <h3>Real-Time Motion Planning with Q-Learning Controller</h3>
+            <div class="project-tags">
+              <span class="tag tag-sm">Python</span>
+              <span class="tag tag-sm">Reinforcement Learning</span>
+              <span class="tag tag-sm">Control</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="projects/apollo.html" class="project-card">
+          <div class="project-thumb">
+            <img src="assets/projects/apollo-reentry.png" alt="Apollo 11 reentry trajectory over Earth">
+          </div>
+          <div class="project-card-info">
+            <h3>Apollo 11 6-DOF Reentry Simulator</h3>
+            <div class="project-tags">
+              <span class="tag tag-sm">C++</span>
+              <span class="tag tag-sm">Simulation</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="projects/quad-pendulum.html" class="project-card">
+          <div class="project-thumb">
+            <img src="assets/projects/quad-pendulum-1.gif" alt="Quadrotor with simple pendulum simulation">
+          </div>
+          <div class="project-card-info">
+            <h3>Modeling a Quadrotor and Simple Pendulum using Lagrangian Mechanics</h3>
+            <div class="project-tags">
+              <span class="tag tag-sm">MATLAB</span>
+              <span class="tag tag-sm">Lagrangian Mechanics</span>
+              <span class="tag tag-sm">Simulation</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="projects/ilqr.html" class="project-card">
+          <div class="project-thumb">
+            <img src="assets/projects/ilqr-thumbnail.jpg" alt="iLQR quadrotor trajectory tracking">
+          </div>
+          <div class="project-card-info">
+            <h3>iLQR Quadrotor Trajectory Tracking</h3>
+            <div class="project-tags">
+              <span class="tag tag-sm">C++</span>
+              <span class="tag tag-sm">ROS</span>
+              <span class="tag tag-sm">PX4</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="projects/pcb.html" class="project-card">
+          <div class="project-thumb">
+            <img src="assets/projects/pcb-thumbnail.jpg" alt="Custom printed circuit board with wiring on carbon fiber frame">
+          </div>
+          <div class="project-card-info">
+            <h3>Designing Printed Circuit Boards for Drones</h3>
+            <div class="project-tags">
+              <span class="tag tag-sm">Altium Designer</span>
+              <span class="tag tag-sm">EAGLE</span>
+              <span class="tag tag-sm">Circuit Design</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="projects/capstone.html" class="project-card">
+          <div class="project-thumb">
+            <img src="assets/projects/capstone-2.png" alt="Aircraft design capstone">
+          </div>
+          <div class="project-card-info">
+            <h3>Aircraft Design Capstone</h3>
+            <div class="project-tags">
+              <span class="tag tag-sm">Aerospace</span>
+              <span class="tag tag-sm">CAD</span>
+              <span class="tag tag-sm">Capstone</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="projects/kj66.html" class="project-card">
+          <div class="project-thumb">
+            <img src="assets/projects/kj66-cad.png" alt="KJ66 jet engine CAD in CATIA">
+          </div>
+          <div class="project-card-info">
+            <h3>KJ66 Micro Turbojet CAD</h3>
+            <div class="project-tags">
+              <span class="tag tag-sm">CATIA</span>
+              <span class="tag tag-sm">CAD</span>
+              <span class="tag tag-sm">Jet Engine</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="projects/rcairplane.html" class="project-card">
+          <div class="project-thumb">
+            <img src="assets/projects/nieuport28-complete.jpg" alt="Completed Nieuport 28 RC airplane">
+          </div>
+          <div class="project-card-info">
+            <h3>Building RC Airplanes</h3>
+            <div class="project-tags">
+              <span class="tag tag-sm">Hobby</span>
+              <span class="tag tag-sm">Balsa Wood</span>
+              <span class="tag tag-sm">RC</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">May 2023 — Present</div>
+            <h3>Graduate Research Intern</h3>
+            <p class="timeline-org">Sandia National Laboratories — Autonomy for Hypersonics</p>
+            <p>Developed CrazySim simulator platform. Implemented multi-agent reinforcement learning for pursuit-evasion. Applied time series analysis tools for anomaly detection in mechanical devices.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Aug 2020 — Present</div>
+            <h3>Graduate Research Assistant</h3>
+            <p class="timeline-org">FACTS Lab — Georgia Institute of Technology</p>
+            <p>Research on NASA urban air mobility verification and validation. Topics include run-time assurance, reachability, motion planning, optimal controls, multi-agent reinforcement learning, and reinforcement learning for aerial robotics.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Aug 2020 — Dec 2020</div>
+            <h3>Graduate Teaching Assistant — Feedback Control Systems</h3>
+            <p class="timeline-org">Georgia Institute of Technology</p>
+            <p>Hosted office hours, graded assignments, and answered course topic questions.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Aug 2018 — Dec 2018</div>
+            <h3>NASA Research Intern</h3>
+            <p class="timeline-org">NASA Glenn Research Center — Cryogenic and Fluid Systems Branch</p>
+            <p>Conducted experiments on MgB2 superconductor samples. Performed literature survey on pool boiling of cryogenic liquids for improving heat transfer models.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications Section -->
+  <section class="section" id="publications">
+    <div class="container">
+      <h2 class="section-title">Publications</h2>
+      <div class="publications-list">
+
+        <div class="pub-item">
+          <div class="pub-year">2026</div>
+          <div class="pub-details">
+            <h3>Learning cooperative strategies for drone swarms using multi-agent reinforcement learning</h3>
+            <p class="pub-authors">C. Llanes, K. Williams, S. Jensen, and S. Coogan</p>
+            <p class="pub-venue">2026 IEEE International Conference on Robotics and Automation (ICRA), 2026</p>
+            <div class="pub-links">
+              <a href="assets/papers/llanes2026icra.pdf" target="_blank">PDF</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-year">2024</div>
+          <div class="pub-details">
+            <h3>CrazySim: A software-in-the-loop simulator for nano quadcopter fleets</h3>
+            <p class="pub-authors">C. Llanes, Z. Kakish, K. Williams, and S. Coogan</p>
+            <p class="pub-venue">2024 IEEE International Conference on Robotics and Automation (ICRA), 2024</p>
+            <div class="pub-links">
+              <a href="assets/papers/llanes2024crazysim.pdf" target="_blank">PDF</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-year">2024</div>
+          <div class="pub-details">
+            <h3>Newton-Raphson flow for aggressive quadrotor tracking control</h3>
+            <p class="pub-authors">E. Morales-Cuadrado, C. Llanes, Y. Wardi, and S. Coogan</p>
+            <p class="pub-venue">2024 American Control Conference (ACC), 2024</p>
+            <div class="pub-links">
+              <a href="assets/papers/cuadrado2024tracking.pdf" target="_blank">PDF</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-year">2023</div>
+          <div class="pub-details">
+            <h3>Experimental validation on aerial vehicles of real-time motion planning with continuous-time Q-learning</h3>
+            <p class="pub-authors">C. Llanes, J. Netter, K. Vamvoudakis, and S. Coogan</p>
+            <p class="pub-venue">Modeling, Estimation and Control Conference, Oct. 2023</p>
+            <div class="pub-links">
+              <a href="assets/papers/llanes2023mecc.pdf" target="_blank">PDF</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-year">2023</div>
+          <div class="pub-details">
+            <h3>A ROS package for UAV run time assurance with in-the-loop reachability</h3>
+            <p class="pub-authors">C. Llanes and S. Coogan</p>
+            <p class="pub-venue">2023 AIAA SciTech GN&amp;C Architectures for Autonomous Systems II, Jan. 2023</p>
+            <div class="pub-links">
+              <a href="assets/papers/llanes2023scitech.pdf" target="_blank">PDF</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-year">2022</div>
+          <div class="pub-details">
+            <h3>Safety from fast, in-the-loop reachability with application to UAVs</h3>
+            <p class="pub-authors">C. Llanes, M. Abate, and S. Coogan</p>
+            <p class="pub-venue">2022 ACM/IEEE 13th International Conference on Cyber-Physical Systems (ICCPS), pp. 127&ndash;136, 2022</p>
+            <div class="pub-links">
+              <a href="assets/papers/llanes2022iccps.pdf" target="_blank">PDF</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-year">2021</div>
+          <div class="pub-details">
+            <h3>Safety from in-the-loop reachability for cyber-physical systems</h3>
+            <p class="pub-authors">C. Llanes, M. Abate, and S. Coogan</p>
+            <p class="pub-venue">Proceedings of the Workshop on Computation-Aware Algorithmic Design for Cyber-Physical Systems (CAADCPS '21), ACM, 2021</p>
+            <div class="pub-links">
+              <a href="assets/papers/llanes2021caadcps.pdf" target="_blank">PDF</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-year">2019</div>
+          <div class="pub-details">
+            <h3>Implementation of an artificial immune system to mitigate cybersecurity threats in unmanned aerial systems</h3>
+            <p class="pub-authors">M. Shivers, C. Llanes, and M. Sherman</p>
+            <p class="pub-venue">2019 IEEE International Workshop on Sensing, Communication, and Control for Unmanned Aerial Systems (SCC-UAS), 2019</p>
+            <div class="pub-links">
+              <a href="assets/papers/shivers2019sccuas.pdf" target="_blank">PDF</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-year">2016</div>
+          <div class="pub-details">
+            <h3>KJ66 REVAMP</h3>
+            <p class="pub-authors">C. Llanes, C. Abendschein, and M. Memon</p>
+            <p class="pub-venue">ASEE EDGD Midyear Conference, 2016</p>
+            <div class="pub-links">
+              <a href="assets/papers/llanes2016kj66.pdf" target="_blank">PDF</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Christian Llanes. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Motion Planning with Q-Learning Controller — Christian Llanes</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/project-page.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">Christian Llanes</a>
+      <a href="../index.html#projects" class="btn btn-outline btn-sm">Back to Projects</a>
+    </div>
+  </nav>
+
+  <section class="project-page">
+    <div class="container">
+      <h1 class="project-page-title">Real-Time Motion Planning with Q-Learning Controller</h1>
+      <div class="project-tags" style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+        <span class="tag">Python</span>
+        <span class="tag">Reinforcement Learning</span>
+        <span class="tag">ROS2</span>
+        <span class="tag">Control</span>
+        <a href="../assets/papers/llanes2023mecc.pdf" class="btn btn-outline" style="margin-left: auto;" target="_blank">PDF</a>
+      </div>
+
+      <div class="project-page-description">
+        <p>This project presents an algorithm for real-time kinodynamic motion planning for aerial vehicles with unknown dynamics operating in crowded, dynamic environments. A random-sampling space-filling tree (RRT^X) handles collision-free path planning and rapid replanning, while a continuous-time Q-learning controller based on an actor-critic structure learns to track the planned path online without requiring a model of the vehicle dynamics.</p>
+        <p>The Q-learning controller uses an integral reinforcement learning actor-critic architecture to approximate the Hamilton-Jacobi-Bellman equation, eliminating the need for a known dynamics model. A Mellinger controller converts the learned force commands into attitude and thrust references.</p>
+        <p>The full system is implemented as a modular ROS2 flight stack and runs entirely onboard a custom 700g quadrotor with a Jetson TX2 computer. It was validated in both Gazebo simulation and real hardware flight experiments navigating obstacle-filled environments, with Q-learning parameters converging online at approximately 125 Hz.</p>
+      </div>
+
+      <div class="project-page-gallery">
+        <img src="../assets/projects/mecc-p3-img0.png" alt="Custom quadrotor platform with Jetson TX2">
+        <img src="../assets/projects/mecc-p4-img0.png" alt="RViz simulation of RRT obstacle environment">
+        <img src="../assets/projects/mecc-p4-img1.png" alt="Hardware experiment with cardboard box obstacles">
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr; gap: 16px; margin-bottom: 40px;">
+        <video controls preload="metadata" style="width:100%; border-radius:10px; border:1px solid var(--color-border);">
+          <source src="../assets/projects/qlearning-rrtqx.mp4" type="video/mp4">
+        </video>
+        <video controls preload="metadata" style="width:100%; border-radius:10px; border:1px solid var(--color-border);">
+          <source src="../assets/projects/qlearning-rrtqx-2.mp4" type="video/mp4">
+        </video>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Christian Llanes. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

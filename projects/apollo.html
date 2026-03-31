@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apollo 11 6-DOF Reentry Simulator — Christian Llanes</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/project-page.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">Christian Llanes</a>
+      <a href="../index.html#projects" class="btn btn-outline btn-sm">Back to Projects</a>
+    </div>
+  </nav>
+
+  <section class="project-page">
+    <div class="container">
+      <h1 class="project-page-title">Apollo 11 6-DOF Reentry Simulator</h1>
+      <div class="project-tags" style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+        <span class="tag">C++</span>
+        <span class="tag">Simulation</span>
+        <span class="tag">Aerospace</span>
+        <a href="../assets/papers/llanes2022apollo.pdf" class="btn btn-outline" style="margin-left: auto;" target="_blank">PDF</a>
+      </div>
+
+      <div class="project-page-description">
+        <p>This was a project I chose for my planetary entry and descent course at Georgia Tech. The simulator models the Apollo 11 Command Module reentry as a 6-DOF rigid body using quaternion kinematics from entry interface down to parachute deployment. Aerodynamic coefficients are extracted as functions of angle of attack and sideslip and fitted with degree-9 polynomials, while a proportional closed-loop controller tracks the commanded bank angle profile from the original Apollo 11 flight data.</p>
+        <p>The simulation incorporates NASA GRAM for atmospheric density, EGM96 with GeographicLib for gravity and coordinate transformations, and the SOFA library for ECI-to-ECEF frame conversions. Simulation results for latitude, longitude, altitude, Mach number, angle of attack, sideslip, flight path angle, and bank angle are compared against the Apollo 11 flight data.</p>
+      </div>
+
+      <div class="project-page-gallery" style="display: grid; grid-template-columns: 1fr 1fr;">
+        <img src="../assets/projects/apollo-reentry.png" alt="Apollo 11 reentry trajectory visualization over Earth">
+        <img src="../assets/projects/apollo-reentry-closeup.png" alt="Close-up of Apollo 11 reentry trajectory near Earth surface">
+        <img src="../assets/projects/apollo-mach-comparison.png" alt="Mach number profile comparison between simulation and Apollo 4 flight data">
+        <img src="../assets/projects/apollo-altitude-comparison.png" alt="Altitude profile comparison between simulation and Apollo 11 flight data">
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Christian Llanes. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
